@@ -18,9 +18,9 @@ const tableRoutes = require('./routes/table.routes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
-// app.use('/api/reservations', reservationRoutes);
-// app.use('/api/orders', orderRoutes);
+app.use('/api/reservations', reservationRoutes);
+app.use('/api/orders', orderRoutes);
 app.use('/api/menu-items', menuItemRoutes);
-// app.use('/api/tables', tableRoutes);
+app.use('/api/tables', tableRoutes);
 
 module.exports = app;
